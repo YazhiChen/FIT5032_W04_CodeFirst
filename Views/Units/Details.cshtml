@@ -1,0 +1,42 @@
+﻿@model FIT5032_W04_CodeFirst.Models.Unit
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Unit</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Target.Fname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Target.Fname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnitName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnitName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnitDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnitDescription)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.UnitId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
